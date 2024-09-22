@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yazılımaorg|Yazılıma Giden Yol</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/favicon.ico"type="image/x-icon"/>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sideMenu">
+                    <li><a href="#header">Ana Sayfa</a></li>
+                    <li><a href="#about">Hakkımızda</a></li>
+                    <li><a href="#educations">Eğitimlerimiz</a></li>
+                    <li><a href="#referanslar">Referanslarımız</a></li>
+                    <li><a href="#contact">İletişim</a></li>
+                    <i class="fa-solid fa-backward" onclick="CloseMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-ellipsis" onclick="OpenMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Yazılımaorg-Yazılım Eğitimleri</p>
+                <h1>Merhaba!!Yazılıma Giden Yola Hoşgeldiniz</h1>
+            </div>
+
+        </div>
+    </div>
+
+              
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                    <img src="images/about.jpg">
+                    </div>
+
+                    <div class="about-col-2">
+                        <h1 class="sub-title">Hakkımızda</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> nisi, praesentium odio, quae fuga repellat atque, nesciunt doloremque esse velit ab possimus nihil<br> laborum ducimus! Fuga odit earum officia voluptatum aliquid quis, maiores sint voluptas animi nam, saepe explicabo facilis?</p>
+                       
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('fullstack')">Full Stack Eğitimlerimiz</p>
+                            <p class="tab-links "  onclick="opentab('backend')">FrontEnd Eğitimlerimiz</p>
+                            <p class="tab-links"  onclick="opentab('frontend')">BackEnd Eğitimlerimiz</p>
+                        </div>
+
+                            <div class="tab-contents active-tab" id="fullstack">
+
+                                <ul>
+                                    <li><span>Ön Yüz </span><br>Web Sayfamızı HTML, CSS ve JS ile geliştiriyoruz</li>
+                                    <li><span>Arka Plan </span><br>Bootstrap, TypeScript ve Angular ile daha gelişmiş sistem kuruyoruz</li>
+                                    <li><span>Baştan Sona</span><br>ASP.Net Core MVC ile veri tabanlı dinamik yönetilebilir sayfalar oluşturuyoruz
+                                    </li>
+                                
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="backend">
+                                <ul>
+                                    <li><span>HTML</span><br>HTML ile web sitesi yapmanın temelleri</li>
+                                    <li><span>CSS</span><br>CSS ile web sitelerimize stiller veriyoruz
+                                    </li>
+                                    <li><span>JAVASCRIPT</span><br>JavaScript ile web sitelerimizi kullanışlı hale getiriyoruz
+                                    </li>
+                                
+                                </ul>
+                                
+                            </div>
+                            <div class="tab-contents" id="frontend">
+                                <ul>
+                                    <li><span>C#</span><br>Modern C# dili ile programlar geliştiriyoruz</li>
+                                    <li><span>SQl</span><br>SQL kullanarak veri tabanı yönetiyoruz</li>
+                                    <li><span>ASP.Net</span><br>ASP.Net Core ile modern web sayfaları oluşturuyoruz</li>
+                                
+                                </ul>
+
+                              
+                            </div>
+
+                    
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+            <div id="educations">
+
+                <div class="container">
+
+             <h1 class="sub-title">Eğitimlerimiz</h1>
+
+                <div class="education-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web TasarımI</h2>
+                        <p>HTML, CSS ve JavaScript</p>
+                        <a href="#">Daha fazla</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>.Net Geliştirme</h2>
+                        <p>C# ve ASP.Net Core</p>
+                        <a href="#">Daha fazla</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>MS SQL Veri Tabanı</h2>
+                        <p>Veritabanı ile ilgili her şey</p>
+                        <a href="#">Daha fazla</a>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+            <div id="referanslar">
+                <div class="container">
+                <div class="sub-title">Referanslarımız</div>
+                
+                <div class="ref-list">
+
+                    <div class="ref">
+
+                        <img src="images/ref-1.png">
+                        <div class="layer">
+                        <h3>Referans 1</h3>
+                        <p>Birinci Referansımız</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    
+                    </div>
+                    <div class="ref">
+
+                        <img src="images/ref-2.png">
+                        <div class="layer">
+                        <h3>Referans 2</h3>
+                        <p>İkinci Referansımız</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    
+                    </div>
+                    <div class="ref">
+
+                        <img src="images/ref-3.png">
+                        <div class="layer">
+                        <h3>Referans 3</h3>
+                        <p>Üçüncü Referansımız</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    
+                    </div>
+
+                </div>
+
+                    <a href="#" class="btn">Daha Fazla Göster</a>
+
+                </div>
+            </div>
+
+                <div id="contact">
+                    <div class="container">
+                        <div class="row">
+                            <div class="contact-left">
+                                <h1 class="sub-title">İletişim</h1>
+                            <p><i class="fa-solid fa-paper-plane"></i>cimenarda.yaz@gmail.com</p>
+                            <p><i class="fa-solid fa-phone"></i>0552 326 5058</p>
+                            
+                            <div class="social-icons">
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+
+                            </div>
+                        </div>
+                            <div class="contact-right">
+                                
+                                <form>
+                                    <input type="text" name="name" placeholder="İsim Giriniz" required>
+                                    <input type="email" name="mail" placeholder="Mail Adresinizi Giriniz" required>
+                                    <textarea name="Message"rows="10" placeholder="Mesajınızı Giriniz"></textarea>
+                                    <button type="submit" class="btn btn2">Gönder</button>
+
+                                </form>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>Tüm Hakkı Saklıdır.Yazılımaorg|Yazılıma Giden yol</p>
+                    </div>
+                </div>
+
+
+        
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>        
+
+ var tablinks=document.getElementsByClassName('tab-links');
+ var tabcontents=document.getElementsByClassName('tab-contents');
+
+
+ function opentab(tabname){
+    for(tablink of tablinks ){
+        
+        tablink.classList.remove('active-link');
+    
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove('active-tab');
+
+    }
+
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabname).classList.add('active-tab');
+
+
+ }
+</script>
+
+
+
+<script>
+
+var sideMenu =document.getElementById('sideMenu');
+function OpenMenu(){
+    sideMenu.style.right='0';
+}
+function CloseMenu(){
+
+    sideMenu.style.right='-350px';
+
+}
+
+
+</script>
+</body>
+</html>
